@@ -17,7 +17,7 @@ export default function HomeScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create((_, { screen }) => ({
   titleContainer: {
     flex: 1,
     justifyContent: "center",
@@ -27,6 +27,6 @@ const styles = StyleSheet.create({
   },
   title: {
     backgroundColor: "blue",
-    width: 200,
+    width: screen.width * 0.5,
   },
-});
+}));
