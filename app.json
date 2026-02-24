@@ -3,7 +3,7 @@
     "name": "screen-rotation-repro",
     "slug": "screen-rotation-repro",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/images/icon.png",
     "scheme": "screenrotationrepro",
     "userInterfaceStyle": "automatic",
