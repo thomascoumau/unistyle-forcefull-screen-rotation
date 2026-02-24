@@ -1,19 +1,17 @@
 /** @format */
 
-import "@/style/unistyle";
 import {
   lockAsync,
   OrientationLock,
   unlockAsync,
 } from "expo-screen-orientation";
-import { StyleSheet } from "react-native-unistyles";
-
-import { HelloWave } from "@/components/hello-wave";
-import { ThemedText } from "@/components/themed-text";
-import { ThemedView } from "@/components/themed-view";
 import { Pressable } from "react-native";
+import { StyleSheet } from "react-native-unistyles";
+import { HelloWave } from "./hello-wave";
+import { ThemedText } from "./themed-text";
+import { ThemedView } from "./themed-view";
 
-export default function HomeScreen() {
+export const Home = () => {
   return (
     <ThemedView style={styles.container}>
       <Pressable onPress={() => void unlockAsync()}>
@@ -30,11 +28,10 @@ export default function HomeScreen() {
       </ThemedView>
     </ThemedView>
   );
-}
+};
 
-const styles = StyleSheet.create((_, runtime) => ({
+const styles = StyleSheet.create({
   container: {
-    paddingTop: runtime.insets.top,
     gap: 30,
     flex: 1,
     justifyContent: "center",
@@ -58,4 +55,4 @@ const styles = StyleSheet.create((_, runtime) => ({
       md: "flex-start",
     },
   },
-}));
+});
