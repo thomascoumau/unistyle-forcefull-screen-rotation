@@ -53,5 +53,9 @@ const styles = StyleSheet.create((_, runtime) => ({
       md: "80%",
       lg: 500,
     },
+    alignItems: {
+      sm: "center",
+      md: "flex-start",
+    },
   },
 }));
