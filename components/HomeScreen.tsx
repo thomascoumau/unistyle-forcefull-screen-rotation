@@ -31,8 +31,8 @@ export default function HomeScreen() {
     </ThemedView>
   );
 }
-
-const SPLASH_SCREEN_TIMEOUT = 10000; // 10s timeout for splash screen
+// Works for small timeouts, doesn't work for long timeouts (100ms is considered long)
+const SPLASH_SCREEN_TIMEOUT = 100; // 10s timeout for splash screen
 
 const timeoutSplashScreen = () =>
   new Promise((resolve) => setTimeout(resolve, SPLASH_SCREEN_TIMEOUT));
