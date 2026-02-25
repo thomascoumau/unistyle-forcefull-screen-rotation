@@ -27,10 +27,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   title: {
-    backgroundColor: "blue",
-    width: {
-      sm: "50%",
-      md: "80%",
+    backgroundColor: {
+      sm: "blue",
+      md: "red",
     },
+    width: "80%",
   },
 });
